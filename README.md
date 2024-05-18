@@ -20,6 +20,7 @@ This project is made for MontyHacks VII by **Alex Sheng, Dhruv Rakhade, Jay Fang
   - [Getting Started](#getting-started)
   - [Usage](#usage)
   - [Simplicity](#simplicity)
+  - [Extensibility](#extensibility)
   - [Customization](#customization)
 
 ## Introduction
@@ -77,6 +78,10 @@ Experiment with different markdown files and see how the wiki database changes i
 
 Blaze focuses on a simplistic web design, for maximum user experience, and modern, sleek user interface. With reduced distractions, this carries the purpose, motivation, and essence of Blaze. According to websitemagazine.com, “Simple design makes it easy to draw the viewer's eye to the most important area of the page - and, if you're looking for conversions, that's your call to action. Navigating a cluttered interface is no fun. It can be confusing, overwhelming and frustrating"(Lundin).
 
+## Extensibility
+We plan to further expand the website's capabilities and functions. Additionally, we also would like to enhance 'Blaze', and make it more world-renowned through heavy improvements so that communities of different, races, genders, ethnicities, and more, all have a comfortable space to learn and discuss a broad range of topics. Blaze has immense improvement potential, having the opportunity to be recognized on an international scale, for advocating different communities, including affirmative action organizations. Improvements that could be made in the future are open respectful discussion forums and threads, open organizational tags to sort categories, and automate functional and efficient moderation, only to name a few. We would like to one day develop Graze to a more extensive, refurbished point, and raise awareness to give back to our communities in need. The potential is vast, and the uses for Blaze are limitless, with our aspirations to create a positive, helpful digital community growing in the future.
+
+
 ## Customization
 Experienced developers may want to customize the project further. You can modify the code to change the appearance of the homepage, add additional features, or integrate it into other web applications.
 
@@ -84,4 +89,4 @@ Experienced developers may want to customize the project further. You can modify
 
 - The code listens for form submissions using jQuery. When the form is submitted, it retrieves the file from the user's computer, and uploads it into our safe and secure database.
 
-Happy coding! 💻
+Happy Coding! 💻
