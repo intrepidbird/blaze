@@ -7,7 +7,7 @@ Devpost: https://devpost.com/software/blaze
 
 ## A visually appealing wiki page to reduce confusion within the community
 
-Blaze is a web-based application that allows users to create wikis about their community or anything at all! This project contains HTML, CSS, and Flask files, along with an "static" folder that holds various images and code. In this README, we will guide both newcomers and experienced developers through the key aspects of this project.
+Blaze is a web-based application that allows users to create wikis about their community or anything at all! This project contains HTML, CSS, and Flask files, along with a “static” folder that holds various images and code. In this README, we will guide both newcomers and experienced developers through the key aspects of this project.
 
 This project is made for MontyHacks VII by **Alex Sheng, Dhruv Rakhade, Jay Fang, and Anshuman Roy**.
 
@@ -24,11 +24,11 @@ This project is made for MontyHacks VII by **Alex Sheng, Dhruv Rakhade, Jay Fang
 
 ## Introduction
 
-Blaze is a simple yet powerful tool that enables users to to create their own informatic pages about the community and share information with the public. Whether you are interested in helping the community, a student, or a developer looking to learn and experiment with Flask, this project offers something for everyone.
+Blaze is a simple yet powerful tool that enables users to create their own informatic pages about the community and share information with the public. Whether you are interested in helping the community, a student, or a developer looking to learn and experiment with Flask, this project offers something for everyone.
 
 ## Our Purpose
 
-Blaze is designed to make people of all races, ethnicities, genders, and more feel comfortable in a safe, caring online community. From advocating for diversity and creativity, to allowing users to create multicultural pages with factual informaation, kindness and welcoming are indispensable in Blaze. We want to aid different communities, and help them vocalize their information, accomplishments, and more. 
+Blaze is designed to make people of all races, ethnicities, genders, and more feel comfortable in a safe, caring online community. From advocating for diversity and creativity, to allowing users to create multicultural pages with factual information, kindness and welcoming are indispensable in Blaze. We want to aid different communities, and help them vocalize their information, accomplishments, and more. 
 
 ### Key Features
 
@@ -66,16 +66,16 @@ To start using Blaze, follow these steps:
 For Newbies
 If you're new to web development or just want to use the application, here's a simple guide:
 
-Open the file uploader by following the "Getting Started" steps.
+Open the file uploader by following the “Getting Started” steps.
 
-1. You'll see an input field labeled "Create Wiki." Enter your files here. For example, you can create montgomery.md and make a wiki page about Montygomery!
+1. You'll see an input field labeled “Create Wiki.” Enter your files here. For example, you can create montgomery.md and make a wiki page about Montgomery!
 2. Press the "Create" button, and the file will appear on the internet.
 
 Experiment with different markdown files and see how the wiki database changes in real-time.
 
 ## Simplicity
 
-Blaze focuses on a simplistic web design, for maximum user experience, and modern, sleek user interface. With reduced distractions, this carries the purpose, motivation, and essence of Blaze. According to websitemagazine.com, "Simple design makes it easy to draw the viewer's eye to the most important area of the page - and, if you're looking for conversions, that's your call to action. Navigating a cluttered interface is no fun. It can be confusing, overwhelming and frustrating"(Lundin).
+Blaze focuses on a simplistic web design, for maximum user experience, and modern, sleek user interface. With reduced distractions, this carries the purpose, motivation, and essence of Blaze. According to websitemagazine.com, “Simple design makes it easy to draw the viewer's eye to the most important area of the page - and, if you're looking for conversions, that's your call to action. Navigating a cluttered interface is no fun. It can be confusing, overwhelming and frustrating"(Lundin).
 
 ## Customization
 Experienced developers may want to customize the project further. You can modify the code to change the appearance of the homepage, add additional features, or integrate it into other web applications.
