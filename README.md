@@ -15,9 +15,11 @@ This project is made for MontyHacks VII by **Alex Sheng, Dhruv Rakhade, Jay Fang
 - [Blaze](#blaze)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
+  - [Our Purpose] (#our-purpose)
     - [Key Features](#key-features)
   - [Getting Started](#getting-started)
   - [Usage](#usage)
+  - [Simplicity](#simplicity)
   - [Customization](#customization)
 
 ## Introduction
@@ -70,6 +72,10 @@ Open the file uploader by following the "Getting Started" steps.
 2. Press the "Create" button, and the file will appear on the internet.
 
 Experiment with different markdown files and see how the wiki database changes in real-time.
+
+## Simplicity
+
+Blaze focuses on a simplistic web design, for maximum user experience, and modern, sleek user interface. With reduced distractions, this carries the purpose, motivation, and essence of Blaze. According to websitemagazine.com, "Simple design makes it easy to draw the viewer's eye to the most important area of the page - and, if you're looking for conversions, that's your call to action. Navigating a cluttered interface is no fun. It can be confusing, overwhelming and frustrating"(Lundin).
 
 ## Customization
 Experienced developers may want to customize the project further. You can modify the code to change the appearance of the homepage, add additional features, or integrate it into other web applications.
