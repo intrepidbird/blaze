@@ -155,7 +155,7 @@
                     <a class="nav-link" href="/createwiki">Create a Wiki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/wikislist">View Wikis</a>
+                    <a class="nav-link" href="/wikilist">View Wikis</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">Log Out</a>
@@ -186,17 +186,12 @@
     <section id="login">
         <h1>Login to your account</h1>
 	<div style="margin-top: 25px;"></div>   
-        <form action="#" method="post" class="login-form">
-            <div class="form-group">
-                <label for="username"><i class="fas fa-user"></i> Username:</label>
-                <input type="text" id="username" name="username" required />
-            </div>
-            <div class="form-group">
-                <label for="password"><i class="fas fa-lock"></i> Password:</label>
-                <input type="password" id="password" name="password" required />
-            </div>
-            <button type="submit">Login</button>
-        </form>
+    <form method="POST" action="">
+        {{ login_form.hidden_tag() }}
+          {{ login_form.username(placeholder = "Username") }}
+          {{ login_form.password(placeholder = "Password") }}
+          {{ login_form.submit() }}
+      </form>
         <p class="form-footer">Don't have an account? <a href="/signup">Sign up</a></p>
     </section>
 </main>

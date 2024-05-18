@@ -155,7 +155,7 @@
                     <a class="nav-link" href="/createwiki">Create a Wiki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/wikislist">View Wikis</a>
+                    <a class="nav-link" href="/wikilist">View Wikis</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">Log Out</a>
@@ -185,17 +185,12 @@
 <main class="container">
     <section id="sign_up">
         <h1>Sign Up for Blaze</h1>
-        <form action="#" method="post" class="sign_up-form">
-            <div class="form-group">
-                <label for="username"><i class="fas fa-user"></i> Username:</label>
-                <input type="text" id="username" name="username" required />
-            </div>
-            <div class="form-group">
-                <label for="password"><i class="fas fa-lock"></i> Password:</label>
-                <input type="password" id="password" name="password" required />
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
+        <form method="POST" action="">
+            {{ signup_form.hidden_tag() }}
+              {{ signup_form.username( placeholder = "Username") }}
+              {{ signup_form.password( placeholder = "Password") }}
+              {{ signup_form.submit() }}
+          </form>
         <p class="form-footer">Already have a account? <a href="/login">Log In</a></p>
     </section>
 </main>
