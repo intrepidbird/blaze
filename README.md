@@ -26,7 +26,7 @@ Blaze is a simple yet powerful tool that enables users to to create their own in
 
 ## Our Purpose
 
-Blaze is designed to make people of all races, ethnicities, genders, and more feel comfortable in a safe, caring online community. From advocating for diversity and creativity, to allowing users to create multicultural pages, kindness and welcoming are indispensable in the Blaze community. We want to aid different communities, and help them vocalize their thoughts and opinions.
+Blaze is designed to make people of all races, ethnicities, genders, and more feel comfortable in a safe, caring online community. From advocating for diversity and creativity, to allowing users to create multicultural pages with factual informaation, kindness and welcoming are indispensable in Blaze. We want to aid different communities, and help them vocalize their information, accomplishments, and more. 
 
 ### Key Features
 
