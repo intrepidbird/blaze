@@ -1,7 +1,285 @@
-<p>Remember to not include spaces in the page name!</p>
-<form method="POST" action="">
-    {{ createpage_form.hidden_tag() }}
-        {{ createpage_form.name(placeholder = "Page Name") }}
-        {{ createpage_form.page(placeholder = "Page Content") }}
-        {{ createpage_form.submit() }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaze | Create Wiki</title>
+    <!-- Favicon -->
+    <link rel="icon" href="static/blaze-favicon.png">
+    	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+	/* Global styles */
+	body {
+	    font-family: "Radio Canada Big", sans-serif;
+	    background-color: #ff7f00; /* Set body background color */
+	    color: #fff176; /* Set text color */
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+	
+	/* Navbar styles */
+	.navbar {
+	    font-family: "Radio Canada Big", sans-serif;
+	    background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
+	    animation: fadeInDown 1s ease; /* Navbar animation */
+	}
+	
+	.navbar-light .navbar-nav .nav-link {
+	    color: #fff176; /* Set navbar link color */
+	}
+	
+	.navbar-light .navbar-nav .nav-link:hover {
+	    color: #fff; /* Set navbar link color on hover */
+	}
+	
+	/* Card image container */
+	.card-img-container {
+	    height: 250px; /* Adjust this */
+	    overflow: hidden;
+	}
+	
+	.card-img-container img {
+	    object-fit: cover;
+	    height: 100%;
+	    width: 100%;
+	}
+	
+	/* Social icon */
+	.social-icon {
+	    width: 20px; /* Adjust this */
+	    height: auto; /* Adjust this */
+	    margin: 0 5px;
+	}
+	
+	/* Team section background */
+	#team {
+	    background-color: #fff; /* Set team section background color */
+	}
+	
+	/* Footer */
+	footer {
+	    background-color: #f8f9fa; /* Set footer background color */
+	    color: #212529; /* Set footer text color */
+	}
+	
+	/* Animation */
+	@keyframes fadeInDown {
+	    0% {
+	        opacity: 0;
+	        transform: translateY(-20px);
+	    }
+	    100% {
+	        opacity: 1;
+	        transform: translateY(0);
+	    }
+	}
+	
+	/* Team section background */
+	#team {
+	    background-color: #ff7f00; /* Set team section background color to orange */
+	}
+	
+	/* Footer */
+	footer {
+	    font-family: "Radio Canada Big", sans-serif;
+	    background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
+	    color: #fff176; /* Set footer text color */
+	}
+	
+	h1 {
+	    text-align: center;
+	}
+	
+	/* Button styles */
+	.btn-primary {
+	    background-color: #ff7f00; /* Set button background color to orange */
+	    border-color: #ff7f00; /* Set button border color to orange */
+	}
+	
+	.btn-primary:hover {
+	    background-color: #ff9600; /* Set button background color on hover to a lighter shade of orange */
+	    border-color: #ff9600; /* Set button border color on hover to a lighter shade of orange */
+	}
+	
+	/* Card styles */
+	.card {
+	    background-color: #ffad00ff; /* Set card background color to #ffad00ff */
+	}
+	
+        .navbar .navbar-brand {
+            color: #fff176 !important;
+        } 
+	
+	input[type="text"],
+	input[type="password"] {
+	    width: 100%;
+	    padding: 10px;
+	    border: 1px solid #f44533;
+	    border-radius: 5px;
+	}   
+	
+	form {
+	    background-color: #ffad00ff;
+	    padding: 20px;
+	    border-radius: 10px;
+	    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	    color: inherit;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	
+	button {
+	    background-color: #ff7f00;
+	    color: #fff176; 
+	    border: none;
+	}
+	
+	.form-footer {
+	    text-align: center; /* Center the footer text */
+	    margin-top: 20px;
+	}
+	
+	.form-footer a {
+	    color: #fff176; /* Set link color */
+	}
+	
+	.form-footer a:hover {
+	    color: #fff; /* Set link color on hover */
+	}
+	
+	/* Specific styles for login section */
+	#login {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100vh; /* Full viewport height */
+	}
+	
+	#login h1 {
+	    margin-bottom: 20px;
+	}
+	
+	/* Wiki name box */
+	#wiki-name {
+	    width: 100%;
+	    padding: 20px;
+	    background-color: #ffad00ff; /* Set background color */
+	    color: #fff176; /* Set text color */
+	    border: 1px solid #f44533; /* Set border color */
+	    box-sizing: border-box;
+	    margin-bottom: 20px;
+	}
+	
+	/* Home page content box */
+	#home-page-content {
+	    width: 100%;
+	    padding: 20px;
+	    background-color: #ffad00ff; /* Set background color */
+	    color: #fff176; /* Set text color */
+	    border: 1px solid #f44533; /* Set border color */
+	    box-sizing: border-box;
+	    height: auto; /* Adjustable height */
+	}
+	
+	/* Full width for containers */
+	.full-width-container {
+	    width: 80%;
+	}
+
+	textarea[name="home"] {
+    		height: 300px; /* Set a larger height */
+	}
+
+        input[type="submit"] {
+            background-color: darkorange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+	
+       <!-- Navbar (sit on top) -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">Blaze</a>
+        <!-- Toggle button for small screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+	{% if current_user.is_authenticated %}    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#main-content">What is Blaze?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/createwiki">Create a Wiki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wikilist">View Wikis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Log Out</a>
+                </li>
+            </ul>
+        </div>
+	{% else %}
+	<div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#main-content">What is Blaze?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">Sign Up</a>
+                </li>
+            </ul>
+	{% endif %}
+        </div>    
+    </nav>
+
+    <!-- Add space here -->
+    <div style="margin-top: 25px;"></div>
+	
+<h1>Create a Wiki</h1>	
+
+	<!-- Add space here -->
+    <div style="margin-top: 25px;"></div>
+	
+<form method="POST" action="" style="width: 80%; margin: 0 auto;">
+    {{ createwiki_form.hidden_tag() }}
+	<p>Page Name:</p>
+        {{ createpage_form.name(placeholder = "Be concise!") }}
+    	<div style="margin-top: 25px;"></div>
+	<p>Page Content:</p>
+        {{ createpage_form.home(placeholder = "The page content") }}
+	<div style="margin-top: 25px;"></div>
+        {{ createwiki_form.submit() }}
   </form>
+
+    <!-- Add space here -->
+    <div style="margin-top: 250px;"></div>
+
+<!-- Footer -->
+<footer class="bg-light text-black text-center p-4">
+    &copy; 2024 SigmaCS. All rights reserved.
+</footer>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
