@@ -6,6 +6,8 @@ from flask_bcrypt import Bcrypt
 from wtforms import StringField, PasswordField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired
 from werkzeug.utils import secure_filename
+import markdown 
+import markdown.extensions.fenced_code
 import os
 
 app = Flask(__name__)
@@ -38,6 +40,7 @@ class Page(db.Model):
     content = db.Column(db.Text, nullable=False)
     wiki_id = db.Column(db.Integer, db.ForeignKey('wiki.id'), nullable=False) 
 
+
 db.init_app(app)
  
 app.app_context().push()
@@ -57,6 +60,11 @@ class CreateWikiForm(FlaskForm):
     name = StringField('Wiki Name', validators=[DataRequired()])
     home = TextAreaField('Home Page Content', validators=[DataRequired()])
     submit = SubmitField('Create Wiki')
+
+class CreatePageForm(FlaskForm):
+    name = StringField('Page Name', validators=[DataRequired()])
+    page = TextAreaField('Page Content', validators=[DataRequired()])
+    submit = SubmitField('Create Page')
 
 @app.route('/signup', methods=["GET", "POST"])
 def sign_up():
@@ -106,12 +114,6 @@ def createwiki():
     return render_template('createwiki.html', createwiki_form=form)
 
 
-def listize():
-    wikis = Wiki.query.all()
-    wiki_names = [wiki.name for wiki in wikis]
-    print(wiki_names)
-
-
 @app.route("/logout")
 def logout():
     logout_user()
@@ -123,12 +125,42 @@ def wikilist():
     wiki_names = [wiki.name for wiki in wikis]
     return render_template("wikilist.html", wiki_names=wiki_names)
 
-@app.route("/wiki{}")
+@app.route("/wiki/<wikiname>/home.md")
+@app.route("/wiki/<wikiname>")
+def homepage(wikiname):
+    file = open(f"./wiki/{wikiname}/home.md", "r")
+    md_template_string = markdown.markdown(
+        file.read(), extensions=["fenced_code"]
+    )
+
+    return md_template_string
+
+@app.route("/wiki/<wikiname>/<pagename>")
+def page(wikiname, pagename):
+    file = open(f"./wiki/{wikiname}/{pagename}", "r")
+    md_template_string = markdown.markdown(
+        file.read(), extensions=["fenced_code"]
+    )
+
+    return md_template_string
+
+@app.route("/wiki/<wikiname>/createpage", methods=["GET", "POST"])
+def pagecreate(wikiname):
+    form = CreatePageForm()
+    if form.validate_on_submit():
+        page_name = form.name.data
+        wiki = Wiki.query.filter_by(name=wikiname).one_or_none()
+        if wiki is None:
+            return "Wiki not found.", 404
+        page_content = Page(content=form.page.data, name=page_name, wiki=wiki)
+        db.session.add(page_content)
+        db.session.commit()
+        f = open(f"./wiki/{wikiname}/{page_name}.md", "x")
+        f.write(form.page.data)
+        f.close()
+        return redirect(url_for('index'))
+    return render_template('createpage.html', createpage_form=form)
 
 @app.route("/")
 def index():
     return render_template("index.html")
-
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template('404.html'), 404
