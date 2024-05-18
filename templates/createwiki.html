@@ -186,12 +186,17 @@
     <!-- Add space here -->
     <div style="margin-top: 25px;"></div>
 	
+<h1>Create a Wiki</h1>	
+	
 <form method="POST" action="">
     {{ createwiki_form.hidden_tag() }}
         {{ createwiki_form.name(placeholder = "Wiki Name") }}
         {{ createwiki_form.home(placeholder = "Home Page Content") }}
         {{ createwiki_form.submit() }}
   </form>
+
+    <!-- Add space here -->
+    <div style="margin-top: 150px;"></div>
 
 <!-- Footer -->
 <footer class="bg-light text-black text-center p-4">
