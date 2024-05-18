@@ -3,7 +3,7 @@
 > [!IMPORTANT]  
 > **Blaze was created by the creators of Graze, winner of RidgeHacks 2024.**
 
-Devpost: https://devpost.com/software/blaze
+Devpost: https://devpost.com/software/blaze-wczt9d
 
 ## A visually appealing wiki page to reduce confusion within the community
 
