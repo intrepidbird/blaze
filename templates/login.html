@@ -187,8 +187,11 @@
             <div style="margin-top: 25px;"></div>
             <form method="POST" action="">
                 {{ login_form.hidden_tag() }}
+		<p>Username:</p>
                 {{ login_form.username(placeholder = "Username") }}
+		<p>Password:</p>
                 {{ login_form.password(placeholder = "Password") }}
+		<div style="margin-top: 5px;"></div>
                 {{ login_form.submit() }}
             </form>
             <p class="form-footer">Don't have an account? <a href="/signup">Sign up</a></p>
