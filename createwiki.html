@@ -1,0 +1,6 @@
+<form method="POST" action="">
+    {{ createwiki_form.hidden_tag() }}
+        {{ createwiki_form.name(placeholder = "Wiki Name") }}
+        {{ createwiki_form.home(placeholder = "Home Page Content") }}
+        {{ createwiki_form.submit() }}
+  </form>

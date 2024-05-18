@@ -1,0 +1,6 @@
+<form method="POST" action="">
+    {{ login_form.hidden_tag() }}
+      {{ login_form.username(placeholder = "Username") }}
+      {{ login_form.password(placeholder = "Password") }}
+      {{ login_form.submit() }}
+  </form>
