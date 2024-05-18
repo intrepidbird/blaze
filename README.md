@@ -89,4 +89,4 @@ Experienced developers may want to customize the project further. You can modify
 
 - The code listens for form submissions using jQuery. When the form is submitted, it retrieves the file from the user's computer, and uploads it into our safe and secure database.
 
-Happy Coding! 💻🔥
+Happy Blazing! 💻🔥
