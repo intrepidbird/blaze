@@ -12,86 +12,89 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
-        /* Global styles */
-        body {
+	/* Global styles */
+	body {
 	    font-family: "Radio Canada Big", sans-serif;
-            background-color: #ff7f00; /* Set body background color */
-            color: #fff176; /* Set text color */
-        }
-        
-        /* Navbar styles */
-        .navbar {
+	    background-color: #ff7f00; /* Set body background color */
+	    color: #fff176; /* Set text color */
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+	
+	/* Navbar styles */
+	.navbar {
 	    font-family: "Radio Canada Big", sans-serif;
-            background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
-            animation: fadeInDown 1s ease; /* Navbar animation */
-        }
-        
-        .navbar-light .navbar-nav .nav-link {
-            color: #fff176; /* Set navbar link color */
-        }
-        
-        .navbar-light .navbar-nav .nav-link:hover {
-            color: #fff; /* Set navbar link color on hover */
-        }
-        
-        /* Card image container */
-        .card-img-container {
-            height: 250px; /* Adjust this */
-            overflow: hidden;
-        }
-        
-        .card-img-container img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-        
-        /* Social icon */
-        .social-icon {
-            width: 20px; /* Adjust this */
-            height: auto; /* Adjust this */
-            margin: 0 5px;
-        }
-        
-        /* Team section background */
-        #team {
-            background-color: #fff; /* Set team section background color */
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #f8f9fa; /* Set footer background color */
-            color: #212529; /* Set footer text color */
-        }
-        
-        /* Animation */
-        @keyframes fadeInDown {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Team section background */
-        #team {
-            background-color: #ff7f00; /* Set team section background color to orange */
-        }
-        
-        /* Footer */
-        footer {
-	    font-family: "Radio Canada Big", sans-serif;
-            background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
-            color: #fff176; /* Set footer text color */
-        }
-
-        h1 {
-    	    text-align: center;
+	    background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
+	    animation: fadeInDown 1s ease; /* Navbar animation */
+	}
+	
+	.navbar-light .navbar-nav .nav-link {
+	    color: #fff176; /* Set navbar link color */
+	}
+	
+	.navbar-light .navbar-nav .nav-link:hover {
+	    color: #fff; /* Set navbar link color on hover */
+	}
+	
+	/* Card image container */
+	.card-img-container {
+	    height: 250px; /* Adjust this */
+	    overflow: hidden;
+	}
+	
+	.card-img-container img {
+	    object-fit: cover;
+	    height: 100%;
+	    width: 100%;
+	}
+	
+	/* Social icon */
+	.social-icon {
+	    width: 20px; /* Adjust this */
+	    height: auto; /* Adjust this */
+	    margin: 0 5px;
+	}
+	
+	/* Team section background */
+	#team {
+	    background-color: #fff; /* Set team section background color */
+	}
+	
+	/* Footer */
+	footer {
+	    background-color: #f8f9fa; /* Set footer background color */
+	    color: #212529; /* Set footer text color */
+	}
+	
+	/* Animation */
+	@keyframes fadeInDown {
+	    0% {
+	        opacity: 0;
+	        transform: translateY(-20px);
 	    }
-
+	    100% {
+	        opacity: 1;
+	        transform: translateY(0);
+	    }
+	}
+	
+	/* Team section background */
+	#team {
+	    background-color: #ff7f00; /* Set team section background color to orange */
+	}
+	
+	/* Footer */
+	footer {
+	    font-family: "Radio Canada Big", sans-serif;
+	    background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
+	    color: #fff176; /* Set footer text color */
+	}
+	
+	h1 {
+	    text-align: center;
+	}
+	
 	/* Button styles */
 	.btn-primary {
 	    background-color: #ff7f00; /* Set button background color to orange */
@@ -107,37 +110,91 @@
 	.card {
 	    background-color: #ffad00ff; /* Set card background color to #ffad00ff */
 	}
-	    
-        .card-title,
-        .card-text {
-            color: #ff4000; /* Set card title and text color to #ff4000 */
-        }
-
+	
 	.navbar-brand {
 	    color: #fff176; /* Set navbar brand text color to #fff176 */
-	}	
-
+	}   
+	
 	input[type="text"],
 	input[type="password"] {
-    		width: 100%;
-    		padding: 10px;
-    		border: 1px solid #f44533;
-    		border-radius: 5px;
-	}	
-
+	    width: 100%;
+	    padding: 10px;
+	    border: 1px solid #f44533;
+	    border-radius: 5px;
+	}   
+	
 	form {
-    		background-color: #ffad00ff;
-		padding: 20px;
-    		border-radius: 10px;
-   		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    		color: inherit;
+	    background-color: #ffad00ff;
+	    padding: 20px;
+	    border-radius: 10px;
+	    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	    color: inherit;
+	    width: 300px; /* Set a fixed width */
+	    height: 300px; /* Set a fixed height to create a square shape */
+	    margin: 0 auto; /* Center the form */
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	
+	button {
+	    background-color: #ff7f00;
+	    color: #fff176; 
+	    border: none;
+	}
+	
+	.form-footer {
+	    text-align: center; /* Center the footer text */
+	    margin-top: 20px;
+	}
+	
+	.form-footer a {
+	    color: #fff176; /* Set link color */
+	}
+	
+	.form-footer a:hover {
+	    color: #fff; /* Set link color on hover */
+	}
+	
+	/* Specific styles for login section */
+	#login {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100vh; /* Full viewport height */
+	}
+	
+	#login h1 {
+	    margin-bottom: 20px;
+	}
+	
+	/* Wiki name box */
+	#wiki-name {
+	    width: 100%;
+	    padding: 20px;
+	    background-color: #ffad00ff; /* Set background color */
+	    color: #fff176; /* Set text color */
+	    border: 1px solid #f44533; /* Set border color */
+	    box-sizing: border-box;
+	    margin-bottom: 20px;
+	}
+	
+	/* Home page content box */
+	#home-page-content {
+	    width: 100%;
+	    padding: 20px;
+	    background-color: #ffad00ff; /* Set background color */
+	    color: #fff176; /* Set text color */
+	    border: 1px solid #f44533; /* Set border color */
+	    box-sizing: border-box;
+	    height: auto; /* Adjustable height */
+	}
+	
+	/* Full width for containers */
+	.full-width-container {
+	    width: 100%;
 	}
 
-	button {
-    		background-color: #ff7f00;
-    		color: #fff176; 
-    		border: none;
-	}
     </style>
 </head>
 <body>
