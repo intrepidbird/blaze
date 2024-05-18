@@ -185,10 +185,14 @@
 <main class="container">
     <section id="sign_up">
         <h1>Sign Up for Blaze</h1>
+    <div style="margin-top: 25px;"></div>
         <form method="POST" action="">
             {{ signup_form.hidden_tag() }}
+		<p>Username:</p>
               {{ signup_form.username( placeholder = "Username") }}
+		<p>Password:</p>
               {{ signup_form.password( placeholder = "Password") }}
+		<div style="margin-top: 5px;"></div>
               {{ signup_form.submit() }}
           </form>
         <p class="form-footer">Already have a account? <a href="/login">Log In</a></p>
