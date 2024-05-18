@@ -24,6 +24,10 @@ This project is made for MontyHacks VII by **Alex Sheng, Dhruv Rakhade, Jay Fang
 
 Blaze is a simple yet powerful tool that enables users to to create their own informatic pages about the community and share information with the public. Whether you are interested in helping the community, a student, or a developer looking to learn and experiment with Flask, this project offers something for everyone.
 
+## Our Purpose
+
+Blaze is designed to make people of all races, ethnicities, genders, and more feel comfortable in a safe, caring online community. From supporting diversity, to allowing user to create multicultural pages, kindness and welcoming are critical factors in the development of Blaze. We want to aid communities, and help them vocalize their thoughts and opinions.
+
 ### Key Features
 
 - Creating wikis in Markdown
