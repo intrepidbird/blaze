@@ -15,7 +15,7 @@ This project is made for MontyHacks VII by **Alex Sheng, Dhruv Rakhade, Jay Fang
 - [Blaze](#blaze)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Our Purpose] (#our-purpose)
+  - [Our Purpose](#our-purpose)
     - [Key Features](#key-features)
   - [Getting Started](#getting-started)
   - [Usage](#usage)
