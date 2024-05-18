@@ -1,4 +1,4 @@
-**Luffy's Legendary Fried Chicken Recipe**
+# Luffy's Legendary Fried Chicken Recipe
 
 It is safe to say that a large majority of the readers would like to satiate themselves over the legendary **Luffy's Fried Chicken Recipe**. Wait no longer, for here is the recipe listed:
 

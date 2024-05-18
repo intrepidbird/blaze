@@ -1,8 +1,8 @@
-**Luffy Overview**
+# Luffy
 
 ***Monkey D. Luffy*** is the main protagonist of the popular manga and anime series "One Piece," created by Eiichiro Oda. Known for his signature straw hat and boundless optimism, Luffy is the captain of the Straw Hat Pirates and aspires to become the Pirate King by finding the legendary treasure known as One Piece.
 
-**Luffy Background**
+**Background**
 
 Luffy was born in Foosha Village and was inspired by his childhood idol, the pirate "Red-Haired" Shanks, to become a pirate himself. His journey begins when he accidentally eats the Gomu Gomu no Mi, a Devil Fruit that grants his body the properties of rubber, making him immune to blunt force and giving him the ability to stretch and contort his body in incredible ways. However, like all Devil Fruit users, he loses the ability to swim as a consequence.
 
@@ -18,11 +18,27 @@ Luffy's primary ability stems from the Gomu Gomu no Mi, which he uses to perform
 
 Luffy's journey to become the Pirate King is filled with numerous epic adventures. Some key arcs include:
 
-- ***East Blue Saga:*** Luffy assembles his initial crew, including Zoro, Nami, Usopp, and Sanji, each with their unique skills and backstories.
-- ***Alabasta Saga:*** The crew helps Princess Vivi save her kingdom from the sinister Crocodile and his Baroque Works organization.
-- ***Enies Lobby Arc:*** The Straw Hats declare war on the World Government to rescue their crewmate, Nico Robin, showcasing their loyalty and resolve.
-- ***Marineford War:*** Luffy fights alongside other pirates to rescue his brother, Portgas D. Ace, from execution, leading to significant personal losses and growth.
-- ***New World:*** After a two-year timeskip, Luffy and his crew face even greater challenges and powerful enemies in their continued quest, including the Yonko (Emperors of the Sea) and the World Government's most formidable forces.
+<table>
+  <tbody>
+    <tr>
+      <th>Adventures</th>
+      <th align="center">Occurences</th>
+    </tr>
+    <tr>
+      <td>East Blue Saga</td>
+      <td align="center"> Luffy assembles his initial crew, including Zoro, Nami, Usopp, and Sanji, each with their unique skills and backstories.</td>
+    </tr>
+    <tr>
+      <td>Alabasta Saga</td>
+      <td align="center">The crew helps Princess Vivi save her kingdom from the sinister Crocodile and his Baroque Works organization.</td>
+    </tr>
+    <tr>
+      <td>New World</td>
+      <td align="center">After a two-year timeskip, Luffy and his crew face even greater challenges and powerful enemies in their continued quest, including the Yonko (Emperors of the Sea) and the World Government's most formidable forces.
+</td>
+    </tr>
+  </tbody>
+</table>
 
 **Legacy**
 
