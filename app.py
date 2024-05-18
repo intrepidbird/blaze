@@ -40,6 +40,7 @@ class Page(db.Model):
     content = db.Column(db.Text, nullable=False)
     wiki_id = db.Column(db.Integer, db.ForeignKey('wiki.id'), nullable=False) 
 
+
 db.init_app(app)
  
 app.app_context().push()
@@ -124,6 +125,7 @@ def wikilist():
     wiki_names = [wiki.name for wiki in wikis]
     return render_template("wikilist.html", wiki_names=wiki_names)
 
+@app.route("/wiki/<wikiname>/home.md")
 @app.route("/wiki/<wikiname>")
 def homepage(wikiname):
     file = open(f"./wiki/{wikiname}/home.md", "r")

@@ -1,5 +1,7 @@
 {% for item in wiki_names %}
     <tr>
-      <td>{{item}}</td>
+      <ul>
+        <li><td><a href="{{ url_for('homepage', wikiname=item) }}">{{item}}</a></td></li>
+      </ul>
     </tr>
 {% endfor %}
