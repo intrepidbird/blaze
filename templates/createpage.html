@@ -1,0 +1,6 @@
+<form method="POST" action="">
+    {{ createpage_form.hidden_tag() }}
+        {{ createpage_form.name(placeholder = "Page Name") }}
+        {{ createpage_form.page(placeholder = "Page Content") }}
+        {{ createpage_form.submit() }}
+  </form>
