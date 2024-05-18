@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blaze | Home</title>
     <!-- Favicon -->
-    <link rel="icon" href="blaze-favicon.png">
+    <link rel="icon" href="static/blaze-favicon.png">
     	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,28 +116,50 @@
 <body>
 
        <!-- Navbar (sit on top) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">Blaze</a>
         <!-- Toggle button for small screens -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+	{% if current_user.is_authenticated %}    
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="about">What is Blaze?</a>
+                    <a class="nav-link" href="/about">What is Blaze?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="create">Create a Wiki</a>
+                    <a class="nav-link" href="/create">Create a Wiki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="wikis">View Wikis</a>
+                    <a class="nav-link" href="/wikis">View Wikis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login">Log In</a>
+                    <a class="nav-link" href="/logout">Log Out</a>
                 </li>
             </ul>
         </div>
+	{% else %}
+	<div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">What is Blaze?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/create">Create a Wiki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wikis">View Wikis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">Sign Up</a>
+                </li>
+            </ul>
+	{% endif %}
+        </div>    
     </nav>
 
     <!-- Add space here -->
