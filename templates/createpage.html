@@ -260,14 +260,14 @@
     <div style="margin-top: 25px;"></div>
 	
 <form method="POST" action="" style="width: 80%; margin: 0 auto;">
-    {{ createwiki_form.hidden_tag() }}
+    {{ createpage_form.hidden_tag() }}
 	<p>Page Name:</p>
         {{ createpage_form.name(placeholder = "Be concise!") }}
     	<div style="margin-top: 25px;"></div>
 	<p>Page Content:</p>
         {{ createpage_form.home(placeholder = "The page content") }}
 	<div style="margin-top: 25px;"></div>
-        {{ createwiki_form.submit() }}
+        {{ createpage_form.submit() }}
   </form>
 
     <!-- Add space here -->
