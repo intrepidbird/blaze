@@ -1,1 +1,99 @@
+        /* Global styles */
+        body {
+	    font-family: "Radio Canada Big", sans-serif;
+            background-color: #ff7f00; /* Set body background color */
+            color: #fff176; /* Set text color */
+        }
+        
+        /* Navbar styles */
+        .navbar {
+	    font-family: "Radio Canada Big", sans-serif;
+            background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
+            animation: fadeInDown 1s ease; /* Navbar animation */
+        }
+        
+        .navbar-light .navbar-nav .nav-link {
+            color: #fff176; /* Set navbar link color */
+        }
+        
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #fff; /* Set navbar link color on hover */
+        }
+        
+        /* Card image container */
+        .card-img-container {
+            height: 250px; /* Adjust this */
+            overflow: hidden;
+        }
+        
+        .card-img-container img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        
+        /* Social icon */
+        .social-icon {
+            width: 20px; /* Adjust this */
+            height: auto; /* Adjust this */
+            margin: 0 5px;
+        }
+        
+        /* Team section background */
+        #team {
+            background-color: #fff; /* Set team section background color */
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f8f9fa; /* Set footer background color */
+            color: #212529; /* Set footer text color */
+        }
+        
+        /* Animation */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
+        /* Team section background */
+        #team {
+            background-color: #ff7f00; /* Set team section background color to orange */
+        }
+        
+        /* Footer */
+        footer {
+	    font-family: "Radio Canada Big", sans-serif;
+            background: linear-gradient(to right, #f44533, #ff7f00, #ff9600); /* Gradient background */
+            color: #fff176; /* Set footer text color */
+        }
+
+        h1 {
+    	    text-align: center;
+	    }
+
+	/* Button styles */
+	.btn-primary {
+	    background-color: #ff7f00; /* Set button background color to orange */
+	    border-color: #ff7f00; /* Set button border color to orange */
+	}
+	
+	.btn-primary:hover {
+	    background-color: #ff9600; /* Set button background color on hover to a lighter shade of orange */
+	    border-color: #ff9600; /* Set button border color on hover to a lighter shade of orange */
+	}
+	
+	/* Card styles */
+	.card {
+	    background-color: #ffad00ff; /* Set card background color to #ffad00ff */
+	}
+
+	.navbar-brand {
+	    color: #fff176; /* Set navbar brand text color to #fff176 */
+	}	
